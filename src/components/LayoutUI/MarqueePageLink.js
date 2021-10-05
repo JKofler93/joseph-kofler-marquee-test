@@ -1,11 +1,13 @@
 
 import {NavLink} from 'react-router-dom';
 
-function MarqueePageLink({page}) {
+function MarqueePageLink({title, slug}) {
+  
+
   return (
     <li>
-      <NavLink to={`/${page.title}`}>
-        {page.title}
+      <NavLink to={`/${slug}`}>
+        {title}
       </NavLink>
     </li>
   )

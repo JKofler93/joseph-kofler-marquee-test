@@ -7,7 +7,7 @@ function LayoutUI({pages}) {
       <nav>
         <img src={abcLogo} alt='abc-logo'/>
         <ul>
-        {pages && pages.map((page) => <MarqueePageLink key={page.slug} page={page}/> )}
+        {pages && pages.map((page) => <MarqueePageLink key={page.slug} page={page} title={page.title} slug={page.slug}/> )}
         </ul>
       </nav>
       <button onClick={() => console.log("Hello from the Contact Us button")}>Contact Us</button>
