@@ -1,15 +1,19 @@
 
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
 
 function MarqueePageLink({title, slug}) {
   
 
   return (
-    <li>
-      <NavLink to={`/${slug}`}>
+    <motion.li
+      whileHover={{ scale: 1.1, color: '#f8e112'}}
+      transition={{ type: 'spring', stiffness: 500}}
+    >
+      <Link to={`/${slug}`}>
         {title}
-      </NavLink>
-    </li>
+      </Link>
+    </motion.li>
   )
 }
 

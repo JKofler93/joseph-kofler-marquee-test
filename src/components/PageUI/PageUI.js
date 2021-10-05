@@ -8,6 +8,8 @@ function PageUI({blocks}) {
     <div>
       <Marquee headline={block.headline} subhead={block.subhead}/>
       <CallToAction ctaMessage={block.cta}/>
+
+      {/* {block.background} */}
     </div>
   )
 }

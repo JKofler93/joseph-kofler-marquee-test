@@ -1,11 +1,11 @@
 import MarqueePageLink from './MarqueePageLink';
-import abcLogo from '../../media/abc_logo.svg';
+import logo from '../../media/abc_logo.svg';
 
 function LayoutUI({pages}) {
   return (
     <div>
       <nav>
-        <img src={abcLogo} alt='abc-logo'/>
+        <img src={logo} alt='abc-logo'/>
         <ul>
         {pages && pages.map((page) => <MarqueePageLink key={page.slug} page={page} title={page.title} slug={page.slug}/> )}
         </ul>

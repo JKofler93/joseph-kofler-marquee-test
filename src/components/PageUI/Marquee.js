@@ -1,10 +1,11 @@
+import {motion} from 'framer-motion';
 
 function Marquee({headline, subhead}) {
   return (
-    <div>
+    <motion.div>
       <h1>{headline}</h1>
       <h2>{subhead}</h2>
-    </div>
+    </motion.div>
   )
 }
 
