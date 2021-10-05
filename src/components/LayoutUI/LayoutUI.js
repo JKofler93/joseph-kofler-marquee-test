@@ -9,7 +9,7 @@ const buttonVariants = {
     textShadow: '0px 0px 8px rgb(255, 255, 255)',
     boxShadow: '0px 0px 8px rgb(255, 255, 255)',
     transition: {
-      yoyo: Infinity  
+      yoyo: Infinity
     }
   }
 }
@@ -17,9 +17,9 @@ const buttonVariants = {
 function LayoutUI({pages}) {
   return (
     <motion.div
-      initial={{opacity: 0}}
-      animate={{opacity: 1}}
-      transition={{delay: 0.5, duration: .7}}
+      initial={{y: -200}}
+      animate={{y: 0}}
+      transition={{delay: 0.5, duration: 1.0}}
       className='layout-ui'
     >
       <nav className='layout-ui-nav'>
