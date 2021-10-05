@@ -1,4 +1,5 @@
 import MarqueePageLink from './MarqueePageLink';
+import './layout.css';
 import logo from '../../media/abc_logo.svg';
 import {motion} from 'framer-motion';
 
@@ -19,10 +20,11 @@ function LayoutUI({pages}) {
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{delay: 0.5, duration: .7}}
+      className='layout-ui'
     >
-      <nav>
+      <nav className='layout-ui-nav'>
         <img src={logo} alt='abc-logo'/>
-        <ul>
+        <ul className='layout-ui-ul'>
         {pages && pages.map((page) => <MarqueePageLink key={page.slug} page={page} title={page.title} slug={page.slug}/> )}
         </ul>
       </nav>
@@ -31,6 +33,7 @@ function LayoutUI({pages}) {
         animate='visible'
         whileHover='hover'
         onClick={() => console.log("Hello from the Contact Us button")}
+        className='layout-ui-contact-button'
       >Contact Us</motion.button>
     </motion.div>
   )
