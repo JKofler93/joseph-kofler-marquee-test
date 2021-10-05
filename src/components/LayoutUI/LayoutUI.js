@@ -19,7 +19,7 @@ function LayoutUI({pages}) {
     <motion.div
       initial={{y: -200}}
       animate={{y: 0}}
-      transition={{delay: 0.5, duration: 1.0}}
+      transition={{ duration: 1.0}}
       className='layout-ui'
     >
       <nav className='layout-ui-nav'>

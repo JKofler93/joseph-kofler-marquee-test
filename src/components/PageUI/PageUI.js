@@ -10,7 +10,7 @@ function PageUI({blocks}) {
     <motion.div
       initial={{y: 1000}}
       animate={{y: 200}}
-      transition={{delay: 0.5, duration: 1.0}}
+      transition={{ duration: 1.0}}
     >
       <Marquee headline={block.headline} subhead={block.subhead}/>
       <CallToAction ctaMessage={block.cta}/>
